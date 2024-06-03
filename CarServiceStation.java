@@ -13,7 +13,7 @@ public class CarServiceStation {
             System.out.print("Enter your choice: ");
             
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
             
             switch (choice) {
                 case 1:
@@ -69,7 +69,7 @@ public class CarServiceStation {
         String model = scanner.nextLine();
         System.out.print("Enter the year of manufacture: ");
         int year = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
         
         double serviceCost = calculateServiceCost(); // Calculate service cost
         double discount = getDiscount(); // Get discount
@@ -82,8 +82,7 @@ public class CarServiceStation {
     }
     
     public static double calculateServiceCost() {
-        // In a real-world scenario, you would calculate the service cost based on the services provided.
-        // For simplicity, let's assume a fixed service cost for now.
+        
         return 100.0; // Fixed service cost
     }
     
